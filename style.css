@@ -507,6 +507,10 @@ input[type="submit"]:focus {
   border-color: #aaa #bbb #bbb;
 }
 
+.bouton {
+  text-decoration: none;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
