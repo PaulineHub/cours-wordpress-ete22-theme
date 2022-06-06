@@ -9,8 +9,10 @@
             <p><?php the_content(); ?></p>
             <?php
                 $titre = get_the_title();
-                $sigle = substr()
+                $sigle = substr($titre, 0, 8);
+                $heure = substr($titre, -6);
             ?>
+            <code><?= $sigle; ?></code>
 
         <?php endwhile; ?>
 

@@ -23,4 +23,13 @@ input[type="submit"] {
 
 .bouton {
 	text-decoration: none;
+	background-color : rgb(243, 223, 223);
+	color: rgb(17, 51, 24);
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+}
+
+.bouton:hover {
+	color:crimson
 }

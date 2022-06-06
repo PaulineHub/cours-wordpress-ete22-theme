@@ -18,7 +18,9 @@
     <section class="site">
     <header class="site__header">
         <section class="site__branding">
-            Voici la section branding.
+            <h1>
+                <a href="<?= esc_url(home_url('/')) ?>"><?= bloginfo('name'); ?></a>
+            </h1>
         </section>
         <nav class="site__navigation">
             Menu
