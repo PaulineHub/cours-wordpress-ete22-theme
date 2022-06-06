@@ -4,7 +4,7 @@
 
 <?php
     if(have_posts()) :
-        while(get_post()) : the_post() ?>
+        while(have_posts()) : the_post() ?>
             <p>
             <?php the_title(); ?>
             </p>

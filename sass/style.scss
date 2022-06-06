@@ -14,6 +14,11 @@ Texte domain : 31-w
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# variable
+	- couleur
+	- police
+	- dimension
+
 # Generic
 	- Normalize
 	- Box sizing
@@ -22,11 +27,10 @@ Texte domain : 31-w
 	- Elements
 	- Links
 	- Forms
-## Layouts
-# Components
+## Layout
+# Composent
 	- Navigation
 	- Posts and pages
-	- Comments
 	- Widgets
 	- Media
 	- Galleries
@@ -38,8 +42,12 @@ Texte domain : 31-w
 
 --------------------------------------------------------------*/
 
-// Import variables and mixins.
-@import "abstracts/abstracts";
+/* variable
+--------------------------------------------- */
+@import "variable/typography";
+@import "variable/dimension";
+@import "variable/colors";
+
 
 /*--------------------------------------------------------------
 # Generic
