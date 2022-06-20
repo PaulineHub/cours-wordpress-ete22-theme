@@ -1,14 +1,14 @@
 /* 
-Theme Name : 31w-exercice1 Pauline
-Author : Pauline Huby
-Author URI : http://github.com/paulinehub
-Description : theme de base pour le cours de 31w
-Version : 1.0.0
-Tested up tp : 5.4
-Require PHP : 5.4
-License: GNU General Public License v2 or later
-License URI : LICENSE
-Texte domain : 31-w
+Theme Name:31w-exercice1 
+Author:Pauline Huby
+Author URI:http://github.com/paulinehub
+Description:theme de base pour le cours de 31w
+Version:1.0.0
+Tested up tp:5.4
+Require PHP:5.4
+License:GNU General Public License v2 or later
+License URI:LICENSE
+Texte domain:31-w
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -379,11 +379,56 @@ body {
   background: #fff;
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 250px;
+}
+
+.article-card {
+  margin: 20px 20px;
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 5px;
+  width: 600px;
+}
+
+/* .page-article-container {
+	padding: 10px;
+}
+ */
+.site__footer {
+  background-color: #461431;
+  color: white;
+  height: 60px;
+  padding-top: 10px;
+  margin-top: 40px;
+  text-align: center;
+  /* 	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+.site__footer p {
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .article-card {
+    width: 400px;
+  }
+}
+
 /**
 *  styles pour h1,h2,h3,h4,h5mh6 et p
 */
 h1, h2 {
-  color: #074113;
+  color: black;
 }
 
 h2, h3, h4, h5, h6, p {
@@ -392,6 +437,29 @@ h2, h3, h4, h5, h6, p {
 
 h1 {
   font-size: clamp(1.5rem, 5vw, 5rem);
+  text-align: center;
+}
+
+h1, h2, p, button, nav, footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.site__branding h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.site__branding h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.site__branding a {
+  color: black;
+}
+
+.site__navigation {
+  text-align: center;
 }
 
 hr {
@@ -453,10 +521,9 @@ table {
 --------------------------------------------- */
 a {
   color: #4169e1;
-}
-
-a:visited {
-  color: #800080;
+  /* &:visited {
+		color: $color__link-visited;
+	} */
 }
 
 a:hover, a:focus, a:active {
@@ -480,11 +547,12 @@ input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  background-color: #461431;
+  color: white;
   line-height: 1;
   padding: 0.6em 1em 0.4em;
+  cursor: pointer;
 }
 
 .bouton:hover,
@@ -492,7 +560,10 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
+  border-color: #461431;
+  background-color: white;
+  color: #461431;
+  font-weight: bold;
 }
 
 .bouton:active, .bouton:focus,
@@ -509,15 +580,19 @@ input[type="submit"]:focus {
 
 .bouton {
   text-decoration: none;
-  background-color: #f3dfdf;
-  color: #113318;
+  background-color: #461431;
+  color: white;
   font-weight: bold;
-  border: none;
+  border: 2px solid #461431;
   border-radius: 5px;
+  display: block;
+  width: fit-content;
+  margin-top: 10px;
 }
 
 .bouton:hover {
-  color: crimson;
+  background-color: white;
+  border-color: #461431;
 }
 
 input[type="text"],

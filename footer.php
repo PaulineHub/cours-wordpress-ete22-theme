@@ -1,5 +1,5 @@
         <footer class="site__footer">
-            Le pied de page
+            <p>Le pied de page</p>
         </footer>
         <?php  wp_footer(); ?>
         </section>

@@ -1,3 +1,50 @@
 body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
 }
+
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: center;
+	align-items: flex-start;
+	min-height: 250px;
+}
+
+.article-card {
+	margin: 20px 20px;
+	padding: 10px;
+	border: solid 1px black;
+	border-radius: 5px;
+	width: 600px;
+}
+
+/* .page-article-container {
+	padding: 10px;
+}
+ */
+ 
+.site__footer {
+	background-color: rgb(70, 20, 49);
+	color: white;
+	height: 60px;
+	padding-top: 10px;
+	margin-top: 40px;
+	text-align: center;
+/* 	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+.site__footer p {
+	color: white;
+}
+
+@media screen and (max-width: 992px) {
+
+	.article-card {
+		width: 400px;
+	}
+}

@@ -4,7 +4,7 @@
 
 
 h1,h2 {
-    color : rgb(7, 65, 19);
+    color : black;
 }
 h2,h3,h4,h5,h6,p {
     color : lighten($color__h, 10%);
@@ -12,4 +12,27 @@ h2,h3,h4,h5,h6,p {
 
 h1 {
     font-size: clamp(1.5rem, 5vw, 5rem);
+    text-align: center;
+}
+
+h1, h2, p, button, nav, footer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site__branding h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.site__branding h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.site__branding a {
+    color: black;
+}
+
+.site__navigation {
+    text-align: center;
 }

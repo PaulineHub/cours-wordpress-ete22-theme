@@ -2,8 +2,8 @@
 /**
  * Template header
  * Ce template est intégré dans tous les modèles de thème
- * @link : https://developer.wordpress.org/themes/
- * @package : 31w
+ * @link:https://developer.wordpress.org/themes/
+ * @package:31w
  */
 ?>
 <!DOCTYPE html>

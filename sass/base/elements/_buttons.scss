@@ -5,14 +5,18 @@ input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
 	border-color: $color__border-button;
-	border-radius: 3px;
-	background: $color__background-button;
-	color: rgba(0, 0, 0, 0.8);
+	border-radius: 5px;
+	background-color: rgb(70, 20, 49);
+	color: rgb(255, 255, 255);
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
+	cursor: pointer;
 
 	&:hover {
-		border-color: $color__border-button-hover;
+		border-color: rgb(70, 20, 49);
+		background-color: rgb(255, 255, 255);
+		color: rgb(70, 20, 49);
+		font-weight: bold;
 	}
 
 	&:active,
@@ -23,13 +27,17 @@ input[type="submit"] {
 
 .bouton {
 	text-decoration: none;
-	background-color : rgb(243, 223, 223);
-	color: rgb(17, 51, 24);
+	background-color : rgb(70, 20, 49);
+	color: rgb(255, 255, 255);
 	font-weight: bold;
-	border: none;
+	border: 2px solid rgb(70, 20, 49);
 	border-radius: 5px;
+	display: block;
+	width: fit-content;
+	margin-top: 10px;
 }
 
 .bouton:hover {
-	color:crimson
+	background-color:white;
+	border-color: rgb(70, 20, 49);
 }
