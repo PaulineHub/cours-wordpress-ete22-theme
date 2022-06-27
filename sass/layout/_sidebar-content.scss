@@ -1,3 +1,9 @@
+/*
+Guide efficace sur l'utilisation de grid
+https://css-tricks.com/snippets/css/complete-guide-grid/
+*/
+
+
 .site {
 	display: grid;
 	grid-template-columns: ($size__site-sidebar) auto;
@@ -6,22 +12,31 @@
 		"sidebar main"
 		"footer footer";
 }
-
-.site-header {
-	grid-area: header;
+.site__header, .site__sidebar, .site__main, .site__footer {
+     padding : 1vh 3vw;
 }
 
-.site-main {
+.site__header {
+	grid-area: header;
+    background-color:  lighten($color__background-zonegrid, 20%);
+   
+}
+
+.site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+    background-color:  lighten($color__background-zonegrid, 30%);
 }
 
-.widget-area {
+.site__sidebar {
 	grid-area: sidebar;
+    background-color:  lighten($color__background-zonegrid, 40%);
 }
 
-.site-footer {
+.site__footer {
 	grid-area: footer;
+
+    background-color:  lighten($color__background-zonegrid, 20%);
 }
 
-@import "no-sidebar";
+/* @import "no-sidebar"; */

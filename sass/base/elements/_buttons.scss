@@ -5,39 +5,19 @@ input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
 	border-color: $color__border-button;
-	border-radius: 5px;
-	background-color: rgb(70, 20, 49);
-	color: rgb(255, 255, 255);
+	border-radius: 3px;
+	background: $color__background-button;
+	color: rgba(0, 0, 0, 0.8);
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
-	cursor: pointer;
+	text-decoration: none;
 
 	&:hover {
-		border-color: rgb(70, 20, 49);
-		background-color: rgb(255, 255, 255);
-		color: rgb(70, 20, 49);
-		font-weight: bold;
+		border-color: $color__border-button-hover;
 	}
 
 	&:active,
 	&:focus {
 		border-color: $color__border-button-focus;
 	}
-}
-
-.bouton {
-	text-decoration: none;
-	background-color : rgb(70, 20, 49);
-	color: rgb(255, 255, 255);
-	font-weight: bold;
-	border: 2px solid rgb(70, 20, 49);
-	border-radius: 5px;
-	display: block;
-	width: fit-content;
-	margin-top: 10px;
-}
-
-.bouton:hover {
-	background-color:white;
-	border-color: rgb(70, 20, 49);
 }

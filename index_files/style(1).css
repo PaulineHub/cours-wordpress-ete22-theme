@@ -1,23 +1,19 @@
-/* 
-Theme Name : 31w-exercice1 Pauline
-Author : Pauline Huby
-Author URI : http://github.com/paulinehub
-Description : theme de base pour le cours de 31w
-Version : 1.0.0
-Tested up tp : 5.4
-Require PHP : 5.4
+@charset "UTF-8";
+/*! 
+Theme Name: 31W-prof
+Author: Eddy Martin
+Author URI: http://github.com/eddytuto
+Description: Thème de base pour le cours de 31W
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.4
 License: GNU General Public License v2 or later
-License URI : LICENSE
-Texte domain : 31-w
+License URI: LICENSE
+Text Domain: 31-w
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# variable
-	- couleur
-	- police
-	- dimension
-
 # Generic
 	- Normalize
 	- Box sizing
@@ -26,8 +22,8 @@ Texte domain : 31-w
 	- Elements
 	- Links
 	- Forms
-## Layout
-# Composent
+## Layouts
+# Composents
 	- Navigation
 	- Posts and pages
 	- Widgets
@@ -40,8 +36,12 @@ Texte domain : 31-w
 	- Alignments
 
 --------------------------------------------------------------*/
-/* variable
---------------------------------------------- */
+/**
+* Police de caractères
+*/
+/* couleur titre */
+/* couleur lien */
+/* couleur bouton */
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -376,22 +376,63 @@ html {
 /* Elements
 --------------------------------------------- */
 body {
-  background: #fff;
+  background: #fefefe;
 }
 
 /**
 *  styles pour h1,h2,h3,h4,h5mh6 et p
 */
 h1, h2 {
-  color: #074113;
+  color: #ec8989;
 }
 
-h2, h3, h4, h5, h6, p {
-  color: #1a1a1a;
+h2, h3, h4, h5, h6 {
+  color: #be1e1e;
 }
 
+p {
+  color: #3c3c3c;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3, h4, h5, h6, p {
+  font-family: "Roboto Slab", serif;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* font-size */
 h1 {
-  font-size: clamp(1.5rem, 5vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 6rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+h4 {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw, 2.4rem);
+}
+
+h6 {
+  font-size: clamp(1.5rem, 2vw, 2.3rem);
+}
+
+p {
+  font-size: clamp(0.8rem, 2vw, 1.8rem);
 }
 
 hr {
@@ -452,15 +493,15 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #4169e1;
+  color: #5276e4;
 }
 
 a:visited {
-  color: #800080;
+  color: #182458;
 }
 
 a:hover, a:focus, a:active {
-  color: #191970;
+  color: #1d62a3;
 }
 
 a:focus {
@@ -485,6 +526,7 @@ input[type="submit"] {
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em;
+  text-decoration: none;
 }
 
 .bouton:hover,
@@ -505,19 +547,6 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
   border-color: #aaa #bbb #bbb;
-}
-
-.bouton {
-  text-decoration: none;
-  background-color: #f3dfdf;
-  color: #113318;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-}
-
-.bouton:hover {
-  color: crimson;
 }
 
 input[type="text"],
