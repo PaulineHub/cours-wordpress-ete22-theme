@@ -9,7 +9,8 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 	grid-template-columns: ($size__site-sidebar) auto;
 	grid-template-areas:
 		"header header"
-		"sidebar main"
+		"sidebar sidebar"
+		"main main"
 		"footer footer";
 }
 .site__header, .site__sidebar, .site__main, .site__footer {
@@ -37,6 +38,16 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 	grid-area: footer;
 
     background-color:  lighten($color__background-zonegrid, 20%);
+}
+
+@media screen and (min-width: 700px) {
+	.site {
+		grid-template-columns: ($size__site-sidebar) auto;
+		grid-template-areas:
+			"header header"
+			"sidebar main"
+			"footer footer";
+	}
 }
 
 /* @import "no-sidebar"; */
