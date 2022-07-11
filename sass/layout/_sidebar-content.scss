@@ -45,8 +45,12 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 .site__footer {
 	grid-area: footer;
-
+	color: white;
     background-color:  lighten($color__background-zonegrid, 20%);
+}
+
+.site__footer h2 {
+	color: white;
 }
 
 @media screen and (min-width: 700px) {
