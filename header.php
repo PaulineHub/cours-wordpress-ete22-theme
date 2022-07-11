@@ -19,18 +19,18 @@
         <header class="site__header">
             <section class="site__branding">
                 <h1>
-                    <a href="<?= esc_url( home_url( '/' ) ) ?>"><?= bloginfo( 'name' ); ?></a>
+                    <a href="<?= esc_url( home_url( '/' ) ) ?>">Cegep Maisonneuve</a>
                 </h1>
                 <h2>
-                <?= bloginfo( 'description' ); ?>
+                Venez étudier chez nous !
                 </h2>
             </section>
-            <nav class="site__navigation">
+            <!-- <nav class="site__navigation">
             Menu
-            </nav>
+            </nav> -->
         </header>
         <section class="site__sidebar">
-            <h3>Sidebar</h3>
+            <h3>Menu</h3>
             <?php wp_nav_menu(array(
                 'menu'=> '',
                 'container'=> 'nav'
