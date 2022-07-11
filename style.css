@@ -374,14 +374,30 @@ html {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+/* .menu__sidebar {
+
+}
+ */
 .site__sidebar ul {
   list-style-type: none;
   margin: 0;
-  padding-left: 1rem 0px;
+  padding: 1rem 0px;
+  color: #132e58;
+}
+
+.site__sidebar li {
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.site__sidebar li:hover {
+  background-color: #afc8ee;
 }
 
 .site__sidebar a {
   text-decoration: none;
+  color: inherit;
+  line-height: 1.5em;
 }
 
 /*--------------------------------------------------------------
@@ -493,6 +509,7 @@ table {
 --------------------------------------------- */
 a {
   color: #4169e1;
+  font-family: "Roboto", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   /* &:visited {
 		color: $color__link-visited;
 	} */

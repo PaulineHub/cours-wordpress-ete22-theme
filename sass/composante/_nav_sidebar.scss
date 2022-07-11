@@ -1,17 +1,25 @@
-.menu__sidebar {
+/* .menu__sidebar {
 
 }
-
+ */
 .site__sidebar ul {
     list-style-type: none;
     margin: 0;
-    padding-left: 1rem 0px;
+    padding: 1rem 0px;
+    color: lighten($color__background-zonegrid, 10%);
+}
+.site__sidebar li {
+    padding: 5px;
+    border-radius: 2px;
 }
 
-.site__sidebar li {
-
+.site__sidebar li:hover {
+    background-color: lighten($color__background-zonegrid, 70%);
+   
 }
 
 .site__sidebar a {
     text-decoration: none;
+    color: inherit;
+    line-height: 1.5em;
 }
