@@ -22,11 +22,16 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
     background-color:  lighten($color__background-zonegrid, 20%);
    
 }
+.site__header h1, .site__header a {
+	color: white;
+	text-decoration: none;
+}
+
 
 .site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-    background-color:  lighten($color__background-zonegrid, 30%);
+    background-color:  white;
 }
 
 .site__sidebar {

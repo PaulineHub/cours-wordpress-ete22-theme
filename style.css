@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*! 
 Theme Name: 31W-cours 
-Author: Eddy Martin
-Author URI: http://github.com/eddytuto
+Author: Pauline Huby
+Author URI: http://github.com/PaulineHub/cours-wordpress-ete22-theme
 Description: Thème de base pour le cours de 31W
 Version: 1.0.0
 Tested up to: 5.4
@@ -585,6 +585,9 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
 /*
@@ -603,24 +606,29 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 .site__header {
   grid-area: header;
-  background-color: #cabeb7;
+  background-color: #1f4c91;
+}
+
+.site__header h1, .site__header a {
+  color: white;
+  text-decoration: none;
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden;
   /* Resolves issue with <pre> elements forcing full width. */
-  background-color: #dfd9d5;
+  background-color: white;
 }
 
 .site__sidebar {
   grid-area: sidebar;
-  background-color: #f5f3f2;
+  background-color: #407bd6;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #cabeb7;
+  background-color: #1f4c91;
 }
 
 @media screen and (min-width: 700px) {
