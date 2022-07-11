@@ -27,6 +27,10 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 	text-decoration: none;
 }
 
+.site__header h2 {
+	color: white;
+}
+
 
 .site__main {
 	grid-area: main;
@@ -36,7 +40,7 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 .site__sidebar {
 	grid-area: sidebar;
-    background-color:  lighten($color__background-zonegrid, 40%);
+	background-color:  lighten($color__background-zonegrid, 60%);
 }
 
 .site__footer {

@@ -372,6 +372,19 @@ html {
 }
 
 /*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+.site__sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 1rem 0px;
+}
+
+.site__sidebar a {
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
 /* Elements
@@ -480,10 +493,9 @@ table {
 --------------------------------------------- */
 a {
   color: #4169e1;
-}
-
-a:visited {
-  color: #800080;
+  /* &:visited {
+		color: $color__link-visited;
+	} */
 }
 
 a:hover, a:focus, a:active {
@@ -533,6 +545,19 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
   border-color: #aaa #bbb #bbb;
+}
+
+.bouton-colored {
+  display: inline-block;
+  background-color: #1c4482;
+  color: white;
+  border: 2px solid #1c4482;
+}
+
+.bouton-colored:hover {
+  color: #1c4482;
+  background-color: white;
+  border: 2px solid #1c4482;
 }
 
 input[type="text"],
@@ -585,9 +610,6 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
 /*
@@ -596,7 +618,7 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 */
 .site {
   display: grid;
-  grid-template-columns: 20vw auto;
+  grid-template-columns: 30vw auto;
   grid-template-areas: "header header" "sidebar sidebar" "main main" "footer footer";
 }
 
@@ -606,12 +628,16 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 .site__header {
   grid-area: header;
-  background-color: #1f4c91;
+  background-color: #1c4482;
 }
 
 .site__header h1, .site__header a {
   color: white;
   text-decoration: none;
+}
+
+.site__header h2 {
+  color: white;
 }
 
 .site__main {
@@ -623,17 +649,17 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 .site__sidebar {
   grid-area: sidebar;
-  background-color: #407bd6;
+  background-color: #85aae5;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #1f4c91;
+  background-color: #1c4482;
 }
 
 @media screen and (min-width: 700px) {
   .site {
-    grid-template-columns: 20vw auto;
+    grid-template-columns: 30vw auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }

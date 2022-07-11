@@ -5,7 +5,7 @@
     if (have_posts()):
         while(have_posts()) : the_post(); ?>
             <h2><?php the_title(); ?></h2>
-            <?php $lien = " ... <a class='bouton' href='" 
+            <?php $lien = " ... <a class='bouton bouton-colored' href='" 
                     . get_permalink()  
                     . "'>"
                     . substr(get_the_title(),0,8) 
