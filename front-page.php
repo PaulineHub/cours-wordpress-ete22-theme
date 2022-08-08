@@ -4,8 +4,9 @@
     <?php
     if (have_posts()):
         while(have_posts()) : the_post(); ?>
-            <h2><?php the_field('titre'); ?></h2>
+            <h2><a href="<?= get_permalink() ?>"><?php the_field('titre'); ?></a></h2>
             <h3><?php the_field('sous_titre'); ?></h3>
+            <p><?php the_field('resume'); ?></p>
             <?php $lien = " ... <a class='bouton bouton-colored' href='" 
                     . get_permalink()  
                     . "'>"
