@@ -41,3 +41,17 @@ add_action( 'after_setup_theme', 'mon_31w_setup' );
 
     }
     add_action( 'wp_enqueue_scripts', 'mon_31w_enqueue' );
+
+    /* --------------------------------------------------------- */
+    /**
+     *
+     *  Permet de modifier la requete principale de la page d'accueil pour extraire uniquement les articles de la categorie "accueil"
+     * @param : $query represente l'objet WP_QUERY contenant la requete principale
+     *
+     */
+    function wpdocs_exclude_category( $query ) {
+        if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
+            $query->set( 'category_name', 'halloween' );
+        }
+    }
+    add_action( 'pre_get_posts', 'wpdocs_exclude_category' );
