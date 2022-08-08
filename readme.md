@@ -2,9 +2,9 @@
 
 Etudiante : Pauline Huby
 
-## TP 1
+## TP2 et Exercice 4
 ### Thème wordpress
-[github-page](https://paulinehub.github.io/cours-wordpress-ete22-theme/tree/tp1)
+[github-page](https://paulinehub.github.io/cours-wordpress-ete22-theme/tree/tp2)
 Le thème contient 5 fichiers :
 - index.php
 - functions.php
