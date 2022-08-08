@@ -49,9 +49,9 @@ add_action( 'after_setup_theme', 'mon_31w_setup' );
      * @param : $query represente l'objet WP_QUERY contenant la requete principale
      *
      */
-    function wpdocs_exclude_category( $query ) {
+    function mon_31w_pre_get_posts_accueil( $query ) {
         if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
-            $query->set( 'category_name', 'halloween' );
+            $query->set( 'category_name', 'accueil' );
         }
     }
-    add_action( 'pre_get_posts', 'wpdocs_exclude_category' );
+    add_action( 'pre_get_posts', 'mon_31w_pre_get_posts_accueil' );
