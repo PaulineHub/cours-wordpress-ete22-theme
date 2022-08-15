@@ -1,6 +1,6 @@
 <?php get_header(); ?> 
 <section class="site__main">
-    <h1>Actualités</h1>
+    <h1>Accueil</h1>
     <?php
     if (have_posts()):
         while(have_posts()) : the_post(); ?>

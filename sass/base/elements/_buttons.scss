@@ -21,3 +21,18 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 	}
 }
+
+.bouton-colored {
+	display: inline-block;
+	background-color:  lighten($color__background-zonegrid, 20%);
+	color: white;
+	border: 2px solid  lighten($color__background-zonegrid, 20%);
+}
+
+.bouton-colored:hover {
+	color:  lighten($color__background-zonegrid, 20%);
+	background-color: white;
+	border: 2px solid  lighten($color__background-zonegrid, 20%);
+}
+
+

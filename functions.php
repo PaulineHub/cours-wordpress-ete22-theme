@@ -20,6 +20,10 @@ function mon_31w_setup() {
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'html5',array('search-form') );
 	add_theme_support('custom-background');
+    register_nav_menus( array(
+        'sidebar_menu' => __('Sidebar Menu', 'mon_31w'),
+        'footer_menu' => __('Footer Menu', 'mon_31w'),
+    ));
 
 } 
 add_action( 'after_setup_theme', 'mon_31w_setup' );
@@ -37,3 +41,17 @@ add_action( 'after_setup_theme', 'mon_31w_setup' );
 
     }
     add_action( 'wp_enqueue_scripts', 'mon_31w_enqueue' );
+
+    /* --------------------------------------------------------- */
+    /**
+     *
+     *  Permet de modifier la requete principale de la page d'accueil pour extraire uniquement les articles de la categorie "accueil"
+     * @param : $query represente l'objet WP_QUERY contenant la requete principale
+     *
+     */
+    function mon_31w_pre_get_posts_accueil( $query ) {
+        if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
+            $query->set( 'category_name', 'accueil' );
+        }
+    }
+    add_action( 'pre_get_posts', 'mon_31w_pre_get_posts_accueil' );

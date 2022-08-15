@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*! 
 Theme Name: 31W-cours 
-Author: Eddy Martin
-Author URI: http://github.com/eddytuto
+Author: Pauline Huby
+Author URI: http://github.com/PaulineHub/cours-wordpress-ete22-theme
 Description: Thème de base pour le cours de 31W
 Version: 1.0.0
 Tested up to: 5.4
@@ -372,6 +372,35 @@ html {
 }
 
 /*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/* .menu__sidebar {
+
+}
+ */
+.site__sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem 0px;
+  color: #132e58;
+}
+
+.site__sidebar li {
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.site__sidebar li:hover {
+  background-color: #afc8ee;
+}
+
+.site__sidebar a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.5em;
+}
+
+/*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
 /* Elements
@@ -480,10 +509,10 @@ table {
 --------------------------------------------- */
 a {
   color: #4169e1;
-}
-
-a:visited {
-  color: #800080;
+  font-family: "Roboto", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  /* &:visited {
+		color: $color__link-visited;
+	} */
 }
 
 a:hover, a:focus, a:active {
@@ -533,6 +562,19 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
   border-color: #aaa #bbb #bbb;
+}
+
+.bouton-colored {
+  display: inline-block;
+  background-color: #1c4482;
+  color: white;
+  border: 2px solid #1c4482;
+}
+
+.bouton-colored:hover {
+  color: #1c4482;
+  background-color: white;
+  border: 2px solid #1c4482;
 }
 
 input[type="text"],
@@ -593,8 +635,8 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 */
 .site {
   display: grid;
-  grid-template-columns: 20vw auto;
-  grid-template-areas: "header header" "sidebar sidebar" "main main" "footer footer";
+  grid-template-columns: 30vw auto;
+  grid-template-areas: "header header" "sidebar sidebar" "main main" "footer footer";
 }
 
 .site__header, .site__sidebar, .site__main, .site__footer {
@@ -603,30 +645,44 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 .site__header {
   grid-area: header;
-  background-color: #cabeb7;
+  background-color: #1c4482;
+}
+
+.site__header h1, .site__header a {
+  color: white;
+  text-decoration: none;
+}
+
+.site__header h2 {
+  color: white;
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden;
   /* Resolves issue with <pre> elements forcing full width. */
-  background-color: #dfd9d5;
+  background-color: white;
 }
 
 .site__sidebar {
   grid-area: sidebar;
-  background-color: #f5f3f2;
+  background-color: #85aae5;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #cabeb7;
+  color: white;
+  background-color: #1c4482;
+}
+
+.site__footer h2 {
+  color: white;
 }
 
 @media screen and (min-width: 700px) {
   .site {
-    grid-template-columns: 20vw auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-columns: 30vw auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }
 
