@@ -11,9 +11,10 @@
 
         <?php endwhile; ?>
     <?php endif; ?>    
-</section>
-<?php wp_nav_menu(array(
+    <?php wp_nav_menu(array(
                 'menu'=> 'accueil',
                 'container'=> 'nav'
             )) ?>
+</section>
+
 <?php get_footer(); ?>
