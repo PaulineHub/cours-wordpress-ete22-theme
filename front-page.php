@@ -12,4 +12,8 @@
         <?php endwhile; ?>
     <?php endif; ?>    
 </section>
+<?php wp_nav_menu(array(
+                'menu'=> 'accueil',
+                'container'=> 'nav'
+            )) ?>
 <?php get_footer(); ?>

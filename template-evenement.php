@@ -26,7 +26,7 @@
             echo "<p class='annonce__organisateur'> Le responsable de l'événement : " . $organisateur . "</p>";
 
             $image = get_field('image');
-            if(empty($image)) : ?>
+            if(!empty($image)) : ?>
             <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
             <?php endif ?>
     </article>
