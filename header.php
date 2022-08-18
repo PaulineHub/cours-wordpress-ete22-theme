@@ -25,17 +25,21 @@
                 Venez étudier chez nous !
                 </h2>
             </section>
-            <!-- <nav class="site__navigation">
-            Menu
-            </nav> -->
+            <nav class="site__navigation">
+            <!-- <h3>Menu</h3> -->
+            </nav>
         </header>
         <section class="site__sidebar">
-            <h3>Menu</h3>
+        <input type="checkbox" name="chk-burger" id="chk-burger">
+            <label for="chk-burger" id="burger">
+            <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" width="32" height="32">
+            </label>
+            
             <?php wp_nav_menu(array(
                 'menu'=> '',
                 'container'=> 'nav',
                 'container_class'=> 'menu__sidebar',
-                'menu_class'=> 'menu__sidebar__ul'
+                'menu_class'=> 'menu__sidebar'
             )) ?>
         </section>
     
