@@ -444,14 +444,31 @@ html {
   line-height: 1.5em;
 }
 
+.menu-accueil-container .menu {
+  display: flex;
+}
+
 .blocs_horizontaux {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .blocs_horizontaux article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
   border: 1px solid #aaa;
-  width: 22%;
+  flex-basis: 50%;
+}
+
+@media screen and (min-width: 700px) {
+  .blocs_horizontaux article {
+    flex-basis: 22%;
+  }
 }
 
 /*--------------------------------------------------------------
