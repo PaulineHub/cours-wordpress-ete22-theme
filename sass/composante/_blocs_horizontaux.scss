@@ -1,0 +1,10 @@
+.blocs_horizontaux {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blocs_horizontaux article {
+    border: 1px solid #aaa;
+    width: 22%;
+}
+

@@ -372,7 +372,7 @@ html {
 }
 
 /*--------------------------------------------------------------
-# Navigation
+# Composante
 --------------------------------------------------------------*/
 #burger {
   display: block;
@@ -442,6 +442,16 @@ html {
   text-decoration: none;
   color: inherit;
   line-height: 1.5em;
+}
+
+.blocs_horizontaux {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blocs_horizontaux article {
+  border: 1px solid #aaa;
+  width: 22%;
 }
 
 /*--------------------------------------------------------------
