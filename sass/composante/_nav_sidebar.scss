@@ -1,7 +1,9 @@
-/* .menu__sidebar {
-
+.menu__sidebar {
+    position: absolute;
+    width: 100vw;
+    z-index: 99;
 }
- */
+
 .site__sidebar ul {
     list-style-type: none;
     margin: 0;
