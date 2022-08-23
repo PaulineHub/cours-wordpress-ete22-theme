@@ -2,7 +2,7 @@
 
 Etudiante : Pauline Huby
 
-## TP2 et Exercice 4
+## TP2 
 ### Thème wordpress
 [github-page](https://paulinehub.github.io/cours-wordpress-ete22-theme/tree/tp2)
 Le thème contient les fichiers suivants :
@@ -17,3 +17,10 @@ Le thème contient les fichiers suivants :
 - template-evenement.php
 - single.php
 - readme.md
+
+## Structure de boite modale
+Cliquer sur le lien en bas d'article de n'importe quelle page article pour voir la description apparaitre dans une boite modale.
+
+## Carrousel animé
+Exemple de carrousel animé :
+https://eddym90.sg-host.com/582-1j1-animation-et-interactivite-en-jeu-75h/
