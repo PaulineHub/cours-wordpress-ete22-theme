@@ -29,7 +29,7 @@
             echo "<p class='annonce__horaire'> L'heure de debut de l’atelier  : " . $horaire . "</p>";
             echo "<p class='annonce__duree'> La duree (nombre de cours) : " . $duree . "</p>";
             echo "<p class='annonce__heure'> Nombre d'heures par séance : " . $heure . "</p>";
-            echo "<p class='annonce__difficulte'> L'heure : " . $$difficulte . "</p>";
+            echo "<p class='annonce__difficulte'> La difficulté du cours : " . $difficulte . "</p>";
             echo "<p class='annonce__lieu'> Lieu ou se déroulera l’atelier  : " . $lieu . "</p>";
             echo "<p class='annonce__prix'> Le prix de l’atelier : " . $prix . "</p>";
     
