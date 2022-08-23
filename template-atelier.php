@@ -18,7 +18,7 @@
             $type = get_field('type');
             $date = get_field('date');
             $duree = get_field('duree');
-            $jour = get_field('jour');
+            $horaire = get_field('horaire');
             $heure = get_field('heure');
             $difficulte = get_field('difficulte');
             $lieu = get_field('lieu');
@@ -26,9 +26,9 @@
             echo "<p class='annonce__animateur'> L'animateur : " . $animateur . "</p>";
             echo "<p class='annonce__type'> Le type de formation : " . $type . "</p>";
             echo "<p class='annonce__date'> La date de début de l'atelier : " . $date . "</p>";
-            echo "<p class='annonce__jour'> Le jour de la semaine de l’atelier  : " . $jour . "</p>";
-            echo "<p class='annonce__duree'> La duree : " . $duree . "</p>";
-            echo "<p class='annonce__heure'> L'heure : " . $heure . "</p>";
+            echo "<p class='annonce__horaire'> L'heure de debut de l’atelier  : " . $horaire . "</p>";
+            echo "<p class='annonce__duree'> La duree (nombre de cours) : " . $duree . "</p>";
+            echo "<p class='annonce__heure'> Nombre d'heures par séance : " . $heure . "</p>";
             echo "<p class='annonce__difficulte'> L'heure : " . $$difficulte . "</p>";
             echo "<p class='annonce__lieu'> Lieu ou se déroulera l’atelier  : " . $lieu . "</p>";
             echo "<p class='annonce__prix'> Le prix de l’atelier : " . $prix . "</p>";
