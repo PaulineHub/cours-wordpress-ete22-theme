@@ -19,7 +19,10 @@
             $date = get_field('date');
             $duree = get_field('duree');
             $jour = get_field('jour');
-            $description = get_field('description');
+            $heure = get_field('heure');
+            $difficulte = get_field('difficulte');
+            $lieu = get_field('lieu');
+            $prix = get_field('prix');
             echo "<p class='annonce__description'>" . $description . "</p>";
             echo "<p class='annonce__endroit'> Le lieu : " . $endroit . "</p>";
             echo "<p class='annonce__date'> La date : " . $date . "</p>";
