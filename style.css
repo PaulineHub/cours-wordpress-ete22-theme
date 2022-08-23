@@ -2,7 +2,7 @@
 /*! 
 Theme Name: 31W-cours 
 Author: Pauline Huby
-Author URI: https://paulinehub.github.io/cours-wordpress-ete22-theme/tree/tp1
+Author URI: https://paulinehub.github.io/cours-wordpress-ete22-theme/tree/tp2
 Description: Thème de base pour le cours de 31W
 Version: 1.0.0
 Tested up to: 5.4
@@ -729,7 +729,10 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 .site {
   display: grid;
   grid-template-columns: 30vw auto;
-  grid-template-areas: "header header" "sidebar sidebar" "main main" "footer footer";
+  grid-template-areas: "header header"
+ "sidebar sidebar"
+ "main main"
+ "footer footer";
 }
 
 .site__header, .site__sidebar, .site__main, .site__footer {
@@ -775,7 +778,9 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 @media screen and (min-width: 700px) {
   .site {
     grid-template-columns: 30vw auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-areas: "header header"
+ "sidebar main"
+ "footer footer";
   }
 }
 
