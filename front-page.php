@@ -18,7 +18,11 @@
     </div>   
 
     <?php wp_nav_menu(array(
-                'menu'=> 'accueil',
+                'menu'=> 'evenement',
+                'container'=> 'nav'
+            )) ?>
+
+    <?php wp_nav_menu(array(
                 'menu'=> 'atelier',
                 'container'=> 'nav'
             )) ?>
