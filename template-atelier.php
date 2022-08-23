@@ -14,10 +14,11 @@
         <h1><?= get_the_title(); ?></h1>
         <?php the_content(); ?>
         <?php 
-            $endroit = get_field('endroit');
+            $animateur = get_field('animateur');
+            $type = get_field('type');
             $date = get_field('date');
-            $heure = get_field('heure');
-            $organisateur = get_field('organisateur');
+            $duree = get_field('duree');
+            $jour = get_field('jour');
             $description = get_field('description');
             echo "<p class='annonce__description'>" . $description . "</p>";
             echo "<p class='annonce__endroit'> Le lieu : " . $endroit . "</p>";
