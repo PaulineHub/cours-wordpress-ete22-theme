@@ -13,4 +13,7 @@ Le thème contient les fichiers suivants :
 - front-page.php
 - category-cours.php
 - category-accueil.php
+- 404.php
+- template-evenement.php
+- single.php
 - readme.md
