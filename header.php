@@ -36,7 +36,7 @@
             </label>
             
             <?php wp_nav_menu(array(
-                'menu'=> '',
+                'menu'=> 'sidebar',
                 'container'=> 'nav',
                 'container_class'=> 'menu__sidebar',
                 'menu_class'=> 'menu__sidebar'
