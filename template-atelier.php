@@ -8,7 +8,7 @@
 
 <main class="site__main">
 <?php  ?>
-    <mark>Événement à venir</mark>
+    <mark>Ateliers à venir</mark>
     <?php if(have_posts()) : the_post(); ?>
     <article class="annonce__article">
         <h1><?= get_the_title(); ?></h1>
