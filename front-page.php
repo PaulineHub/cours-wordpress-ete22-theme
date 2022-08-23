@@ -19,6 +19,7 @@
 
     <?php wp_nav_menu(array(
                 'menu'=> 'accueil',
+                'menu'=> 'atelier',
                 'container'=> 'nav'
             )) ?>
 </section>
