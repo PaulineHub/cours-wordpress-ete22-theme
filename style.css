@@ -784,5 +784,21 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
   }
 }
 
+.color1 {
+  background-color: rgb(41, 148, 175);
+}
+
+.color2 {
+  background-color: rgb(73, 189, 218);
+}
+
+.color3 {
+  background-color: rgb(77, 218, 253);
+}
+
+.color4 {
+  background-color: rgb(155, 235, 255);
+}
+
 /* @import "no-sidebar"; */
 /*# sourceMappingURL=style.css.map */
