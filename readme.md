@@ -2,6 +2,12 @@
 
 Etudiante : Pauline Huby
 
+## Epreuve Finale
+[github-page](https://paulinehub.github.io/cours-wordpress-ete22-theme/tree/epreuve-finale)
+Ajout d'un template pour une page sur les ateliers avec 9 champs personnalisés.
+Création de 4 pages annonçant les ateliers.
+Adaptation du menu pour diriger vers les 4 nouvelles pages "atelier" créées.
+
 ## TP2 
 ### Thème wordpress
 [github-page](https://paulinehub.github.io/cours-wordpress-ete22-theme/tree/tp2)
