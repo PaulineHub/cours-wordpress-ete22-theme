@@ -23,13 +23,16 @@
             $difficulte = get_field('difficulte');
             $lieu = get_field('lieu');
             $prix = get_field('prix');
-            echo "<p class='annonce__animateur'>L'animateur : " . $animateurn . "</p>";
+            echo "<p class='annonce__animateur'> L'animateur : " . $animateur . "</p>";
             echo "<p class='annonce__type'> Le type de formation : " . $type . "</p>";
             echo "<p class='annonce__date'> La date de début de l'atelier : " . $date . "</p>";
             echo "<p class='annonce__jour'> Le jour de la semaine de l’atelier  : " . $jour . "</p>";
-            echo "<p class='annonce__date'> La date : " . $date . "</p>";
+            echo "<p class='annonce__duree'> La duree : " . $duree . "</p>";
             echo "<p class='annonce__heure'> L'heure : " . $heure . "</p>";
-            echo "<p class='annonce__organisateur'> Le responsable de l'événement : " . $organisateur . "</p>";
+            echo "<p class='annonce__difficulte'> L'heure : " . $$difficulte . "</p>";
+            echo "<p class='annonce__lieu'> Lieu ou se déroulera l’atelier  : " . $lieu . "</p>";
+            echo "<p class='annonce__prix'> Le prix de l’atelier : " . $prix . "</p>";
+    
 
             $image = get_field('image');
             if(!empty($image)) : ?>
